@@ -12,6 +12,10 @@ body{
     font-size: 1em;
     color: #5A5A5A;
 }
+.error{
+    font-size: 1em;
+    color: #D54444;
+}
 .tarjeta{
     background-color: white;
     border-radius: 0.3em;
@@ -47,4 +51,8 @@ body{
 }
 .boton-aceptar{
     background-color: #35C0DA;
+}
+.exitoso{
+    font-size: 10em;
+    color: #5A5A5A;
 }

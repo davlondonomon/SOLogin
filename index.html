@@ -13,9 +13,26 @@
             <h1 class="leyenda">Contraseña</h1>
             <input type="password" class = "entrada" id="contrasenna">
             <div class="botones">
-                <button class="boton-peligro boton-normal">Cancelar</button>
-                <button class="boton-aceptar boton-normal">Ingresar</button>
+                <button class="boton-peligro boton-normal" onclick="cancelar()">Cancelar</button>
+                <button class="boton-aceptar boton-normal" onclick="toggleMostrar()">Ingresar</button>
             </div>
+            <h1 class="error" id="error" style="display: none;">Usuario o contraseña incorrectos</h1>
         </div>
     </body>
+    <script charset="utf-8">
+        function toggleMostrar() {
+            var x = document.getElementById("error");
+            if (x.style.display === "none") {
+                x.style.display = "unset";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function cancelar(){
+            var x = document.getElementsByClassName("entrada")
+            for(i in x){
+                x[i].value=""
+            }
+        }
+    </script>
 </html>
